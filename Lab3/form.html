@@ -2,8 +2,8 @@
 =========================================================
 Name        : form.html
 Assignment  : Lab 3 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Fatima Asif and Aroush Qureshi
+Submission  : Jan 31, 2024
 Description : A simple HTML file for form tag.
 =========================================================
 -->
@@ -18,10 +18,16 @@ Description : A simple HTML file for form tag.
     <form action="#" method="post">
         <fieldset>
             <legend>Personal Information</legend>
-            <!-- Add a label and input field for 'Name' here -->
+            <label for = 'name'>Name: </label>
+            <input type="text" id="name" name="name">
+            <br>
+
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
-            <!-- Add a label and input field for 'Password' here, ensure to use the correct type for password fields -->
+
+            <label for = 'password'>Password: </label>
+            <input type="text" id="password" name="password"><br>
+
         </fieldset>
 
         <fieldset>
@@ -29,12 +35,27 @@ Description : A simple HTML file for form tag.
             <p>Gender:</p>
 			<input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
-            <!-- Create radio buttons for 'Female', and 'Other' gender options -->
+
+            <input type = "radio" id = "female" name=" female">
+            <label type = "female">Female </label><br>
+
+            <input type = "radio" id = "other" name="other">
+            <label type = "other">Other </label><br><br>
+
 	
             <label for="fruits">Choose a fruit:</label><br>
-            <select id="fruits" name="fruits">
+            <select id="fruits" name="fruits" size = "10">
 				<option value="apple">Apple</option>
-                <!-- Add options for various fruits like Banana, Orange, etc. (At least 10 fruits) -->
+                <option value="banana">Banana</option>
+                <option value="kiwi">Kiwi</option>
+                <option value="orange">Orange</option>
+                <option value="melon">Melon</option>
+                <option value="mango">Mango</option>
+                <option value="lychee">Lychee</option>
+                <option value="watermelon">Watermelon</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="blueberries">Blueberries</option>
+                
             </select><br>
 			<!-- Add some attributes to select tag that changes it from a drop menu to a scrollable list.-->
         </fieldset>
